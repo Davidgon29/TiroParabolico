@@ -61,8 +61,7 @@ def move():
 
     for target in targets:
         if not inside(target):
-            return
-
+            targets[targets.index(target)].x = 200 #Igualando el índice del objetivo anterior al actual.
     ontimer(move, 50)
 
 
